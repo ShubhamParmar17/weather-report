@@ -9,8 +9,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #ffac21, #cc1164);
-  color: #fff;
+  background: #293251;
+  color: #222;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
 }
@@ -25,7 +25,8 @@ section {
 
 header {
   margin: 3rem auto;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.8rem;
 }
 
 .alert {
@@ -49,26 +50,27 @@ header {
   background: #d4edda;
 }
 
-.header-container {
-  box-shadow: 9px 9px 24px -4px rgba(0, 0, 0, 0.75);
-}
-
 .weather-input,
 .btn {
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 0.5em;
+  font-size: 1.6rem;
   border: none;
   background: white;
 }
 
 .weather-input {
   border-radius: 0.25rem 0 0 0.25rem;
+  font-weight: 300;
   text-align: center;
   text-transform: capitalize;
 }
 
+.weather-input::placeholder {
+  font-size: 1.2rem;
+}
+
 .btn {
-  color: #ff6f47;
+  color: rgb(79, 101, 179);
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -77,7 +79,7 @@ header {
 
 .btn:hover {
   color: white;
-  background: #ff6f47;
+  background: rgb(79, 101, 179);
 }
 
 .weather-container {
@@ -88,7 +90,7 @@ header {
 
 .card {
   width: 453px;
-  box-shadow: 9px 9px 24px -4px rgba(0, 0, 0, 0.75);
+  background-color: #f4f9ff;
   border-radius: 0.25rem;
   margin-top: 2.5rem;
   text-align: center;
@@ -119,7 +121,7 @@ header {
 
 @media (max-width: 576px) {
   header {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
   .weather-input {
@@ -131,7 +133,7 @@ header {
 
   .weather-input,
   .btn {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .card {
